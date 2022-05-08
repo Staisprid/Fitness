@@ -15,7 +15,7 @@
 
 body {
     font-family: 'Oswald', sans-serif;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     height: 100vh;
     background: linear-gradient(to right bottom, #f5ede9, #f4c9e3, #cebef8);
     padding: 3vw;
@@ -36,14 +36,21 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 5vw;
+    /* margin-bottom: 5vw; */
+    padding: 3vw;
 }
 
 .main {
     display: flex;
     align-items: center;
-    flex-grow: 1;
+    /* flex-grow: 1;
+    position: relative; */
+    /* overflow: hidden; */
+
+
 }
+
+
 
 .footer {
     position: relative;
@@ -87,17 +94,22 @@ a {
     border-radius: var(--size);
     border: 0.5vw solid var(--pink);
     opacity: 0.3;
+
+
 }
 
 .main__bg-round_pink {
     top: 20vh;
     right: calc(var(--size)/-1.4);
+
+
 }
 
 .main__bg-round_orange {
     border-color: var(--orange);
     left: 25vw;
     bottom: calc(var(--size)/-2);
+
 }
 
 .main__text {
@@ -140,6 +152,7 @@ a {
 
 .maim__visual {
     position: relative;
+    z-index: 100;
 }
 
 .main__badge {
@@ -161,6 +174,7 @@ a {
     text-align: center;
     font-size: calc(var(--size)/12);
     transform: rotate(-25deg);
+    z-index: 100;
 }
 
 .main__badge strong {
@@ -317,9 +331,9 @@ a {
     }
 
     /* Header */
-    .main {
-        top: 2vh;
-    }
+    /* .main {
+        top: 3vh;
+    } */
 
     .main__bg-round {
         --size: 38vw;
@@ -343,9 +357,8 @@ a {
     }
 
     .main__badge {
-        --size: 120px;
-        top: -27%;
-        left: 0%;
+        --size: 24vw;
+        left: -5%;
         font-size: calc(var(--size)/12);
     }
 
@@ -354,7 +367,7 @@ a {
     }
 
     .main__badge strong {
-        font-size: calc(var(--size)/5);
+        font-size: calc(var(--size)/6);
     }
 
     .main__text {
@@ -367,7 +380,7 @@ a {
     }
 
     .main__title {
-        font-size: 110px;
+        font-size: 16vw;
         margin-bottom: 2.8vw;
 
     }
@@ -380,14 +393,13 @@ a {
     .main__kettlebell {
         position: absolute;
         bottom: 0%;
-        right: -11%;
-        width: 26vw;
+        width: 21vw;
     }
 
     /* Footer */
     .footer {
         justify-content: center;
-        bottom: 4vh;
+        bottom: 2vh;
     }
 
     .footer__link {
